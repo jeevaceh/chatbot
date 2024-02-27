@@ -1,13 +1,7 @@
 import OpenAI from 'openai';
 
-const apiKeys = process.env.NODE_ENV;
-console.log(apiKeys)
-if (!apiKeys) {
-    throw new Error('OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.');
-}
-
 const openai = new OpenAI({
-    apiKey:apiKeys ,
+    apiKey:process.env.React_App_GPT_Key ,
     dangerouslyAllowBrowser: true 
   });
    
