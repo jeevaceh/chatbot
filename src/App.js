@@ -16,7 +16,7 @@ function App() {
   const [input,setInput] = useState("");
 
   const [messages,setMessages] = useState([{
-    text:"I\'m ChatGPT, an AI developed by OpenAI, trained on vast amounts of text data to assist users with questions and tasks. My abilities include generating human-like text, understanding context, and providing helpful responses across various topics. While I\'m not conscious or emotional, I aim to be a useful tool for engaging conversation and providing information.",
+    text:"I'm ChatGPT, an AI developed by OpenAI, trained on vast amounts of text data to assist users with questions and tasks. My abilities include generating human-like text, understanding context, and providing helpful responses across various topics. While I'm not conscious or emotional, I aim to be a useful tool for engaging conversation and providing information.",
     isBot:true
   }]);
 
