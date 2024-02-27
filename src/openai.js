@@ -1,7 +1,13 @@
 import OpenAI from 'openai';
 
+const apiKey = process.env.NODE_ENV;
+
+if (!apiKey) {
+    throw new Error('OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.');
+}
+
 const openai = new OpenAI({
-    apiKey:process.env.NODE_ENV ,
+    apiKey:apiKey ,
   });
    
  export async function chatFunction(message) {
