@@ -1,8 +1,7 @@
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-    apiKey: "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",
-    dangerouslyAllowBrowser: true // This is the default and can be omitted
+    apiKey:process.env.NODE_ENV ,
   });
    
  export async function chatFunction(message) {
