@@ -102,8 +102,8 @@ function App() {
                 src={message.isBot ? chatLogo : userImg}
                 alt="GPTBot"
               />
-              <p className="text">{message.text}</p>
-            </div>
+                <p className="text" dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, '<br />') }}></p>
+               </div>
           )}
           <div ref= {msgEnd}/>
         </div>
